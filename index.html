@@ -1,202 +1,374 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>João Mariano - Desenvolvedor Front-End</title>
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" type="image/png" href="favicon.png">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Mariano — Desenvolvedor Front-End</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-<header>
+<!-- ═══════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    João Mariano<span class="nav-logo-dot"></span>
+  </a>
 
-<h1>João Mariano</h1>
-<h2>Desenvolvedor Web | Criação de Landing Pages</h2>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li>
+      <a href="https://wa.me/5587999118417" target="_blank" rel="noopener" class="nav-cta">
+        Fale comigo
+      </a>
+    </li>
+  </ul>
 
-<nav class="links">
-<ul>
-
-<li>
-<a href="https://github.com/joaomariano087" target="_blank" rel="noopener">
-GitHub
-</a>
-</li>
-
-<li>
-<a href="https://linkedin.com/in/joão-mariano-150386327" target="_blank" rel="noopener">
-LinkedIn
-</a>
-</li>
-
-<li>
-<a href="https://www.instagram.com/joao_valadares09/" target="_blank" rel="noopener">
-Instagram
-</a>
-</li>
-
-</ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </nav>
 
-</header>
 
-<main>
+<!-- ═══════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blob-1"></div>
+  <div class="hero-blob-2"></div>
+  <div class="hero-geo"></div>
 
-<!-- SOBRE -->
-<section class="sobre animar">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Disponível para projetos
+    </div>
 
-<img src="imagem/foto-perfil.jpg" alt="Foto de João Mariano">
+    <h1 class="hero-title">
+      Desenvolvedor<br>
+      <span class="line-accent">Front-End</span><br>
+      <span class="line-outline">Criativo.</span>
+    </h1>
 
-<div>
-<h2>Sobre mim</h2>
+    <p class="hero-sub">
+      Olá, sou <strong>João Mariano</strong> — estudante de Ciência da Computação e desenvolvedor web
+      especializado em criar experiências digitais modernas, responsivas e focadas em conversão.
+    </p>
 
-<p>
-Sou estudante de Ciência da Computação e desenvolvedor web em formação, com foco no desenvolvimento front-end. Tenho experiência na criação de páginas e aplicações utilizando HTML, CSS e JavaScript. Atualmente estou aprofundando meus estudos em tecnologias modernas do ecossistema JavaScript como React, Angular e Node.js.
-</p>
-</div>
+    <div class="hero-actions">
+      <a href="#projetos" class="btn-primary">
+        Ver projetos
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.5">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="#contato" class="btn-secondary">Falar comigo</a>
+    </div>
+  </div>
 
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    Scroll
+  </div>
+
+  <ul class="hero-socials">
+    <li><a href="https://github.com/joaomariano087" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/joão-mariano-150386327" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/joao_valadares09/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
 </section>
 
-<!-- HABILIDADES -->
-<section class="animar">
 
-<h2>Habilidades</h2>
+<!-- ═══════════════════════════════════════════
+     SOBRE
+═══════════════════════════════════════════ -->
+<section id="sobre">
+  <div class="section-inner">
+    <div class="sobre-grid">
 
-<ul class="habilidades">
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>MySQL</li>
-<li>Git</li>
-</ul>
+      <!-- Imagem -->
+      <div class="sobre-img-wrap reveal">
+        <div class="sobre-img-outer">
+          <img src="image/foto-atualizada.png" alt="João Mariano — Desenvolvedor Front-End">
 
+          <div class="sobre-stat-chip chip-1">
+            <div class="chip-icon">💻</div>
+            <div class="chip-text">
+              <strong>Front-End</strong>
+              <span>HTML · CSS · JS</span>
+            </div>
+          </div>
+
+          <div class="sobre-stat-chip chip-2">
+            <div class="chip-icon">🎓</div>
+            <div class="chip-text">
+              <strong>Ciência da</strong>
+              <span>Computação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="sobre-text">
+        <p class="section-eyebrow reveal">Sobre mim</p>
+        <h2 class="section-title reveal reveal-d1">
+          Transformo ideias em<br><em>experiências digitais</em>
+        </h2>
+        <p class="reveal reveal-d2">
+          Sou estudante de <strong>Ciência da Computação</strong> e desenvolvedor web em formação,
+          com foco no desenvolvimento front-end. Tenho experiência na criação de páginas e
+          aplicações com HTML, CSS e JavaScript.
+        </p>
+        <p class="reveal reveal-d3">
+          Atualmente aprofundando meus estudos em tecnologias modernas como
+          <strong>React, Angular e Node.js</strong> para construir produtos cada vez mais
+          completos e robustos.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- SOFT SKILLS -->
-<section class="animar">
 
-<h2>Soft Skills</h2>
+<!-- ═══════════════════════════════════════════
+     SKILLS
+═══════════════════════════════════════════ -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">Habilidades</p>
+    <h2 class="section-title reveal reveal-d1">O que eu domino</h2>
 
-<ul class="soft-skills">
-<li>Comunicação</li>
-<li>Trabalho em equipe</li>
-<li>Resolução de problemas</li>
-<li>Adaptabilidade</li>
-<li>Gestão de tempo</li>
-</ul>
+    <div class="skills-grid">
 
+      <div class="reveal reveal-d2">
+        <p class="skills-col-title">Hard Skills</p>
+        <div class="skill-chips">
+          <span class="skill-chip"><span class="skill-chip-dot"></span>HTML5</span>
+          <span class="skill-chip"><span class="skill-chip-dot"></span>CSS3</span>
+          <span class="skill-chip"><span class="skill-chip-dot"></span>JavaScript</span>
+          <span class="skill-chip"><span class="skill-chip-dot"></span>Python</span>
+          <span class="skill-chip"><span class="skill-chip-dot"></span>MySQL</span>
+          <span class="skill-chip"><span class="skill-chip-dot"></span>Git</span>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d3">
+        <p class="skills-col-title">Soft Skills</p>
+        <div class="skill-chips">
+          <span class="skill-chip soft">Comunicação</span>
+          <span class="skill-chip soft">Trabalho em equipe</span>
+          <span class="skill-chip soft">Resolução de problemas</span>
+          <span class="skill-chip soft">Adaptabilidade</span>
+          <span class="skill-chip soft">Gestão de tempo</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- PROJETOS -->
-<section class="animar">
 
-<h2>Projetos</h2>
+<!-- ═══════════════════════════════════════════
+     PROJETOS
+═══════════════════════════════════════════ -->
+<section id="projetos">
+  <div class="section-inner">
+    <div class="projetos-header">
+      <div>
+        <p class="section-eyebrow reveal">Portfólio</p>
+        <h2 class="section-title reveal reveal-d1">Projetos recentes</h2>
+      </div>
+      <span class="projetos-count reveal">03 projetos</span>
+    </div>
 
-<div class="projetos">
+    <div class="projetos-grid">
 
-<div class="card">
-<img src="imagem/sunshine-house.jpg" alt="Projeto Sunshine House">
+      <!-- Card 1 -->
+      <div class="projeto-card reveal">
+        <div class="projeto-img-wrap">
+          <img class="projeto-img" src="image/sunshine-house.jpg" alt="Sunshine House">
+        </div>
+        <div class="projeto-body">
+          <span class="projeto-tag">Web App</span>
+          <h3>Sunshine House</h3>
+          <p>Cardápio digital de cookies com design responsivo e interatividade em JavaScript.</p>
+          <div class="projeto-links">
+            <a href="https://joaomariano087.github.io/Sunshine-house/"
+               target="_blank" rel="noopener" class="btn-p-primary">Ver site</a>
+            <a href="https://github.com/joaomariano087/Sunshine-house"
+               target="_blank" rel="noopener" class="btn-p-outline">Código</a>
+          </div>
+        </div>
+      </div>
 
-<h3>Sunshine House</h3>
+      <!-- Card 2 -->
+      <div class="projeto-card reveal reveal-d2">
+        <div class="projeto-img-wrap">
+          <img class="projeto-img" src="image/conversor-moeda.png" alt="Conversor de Moeda">
+        </div>
+        <div class="projeto-body">
+          <span class="projeto-tag">Ferramenta</span>
+          <h3>Conversor de Moeda</h3>
+          <p>Aplicação para conversão de valores com interface intuitiva e dados em tempo real.</p>
+          <div class="projeto-links">
+            <a href="https://joaomariano087.github.io/conversor-moeda/"
+               target="_blank" rel="noopener" class="btn-p-primary">Ver site</a>
+            <a href="https://github.com/joaomariano087/conversor-moeda"
+               target="_blank" rel="noopener" class="btn-p-outline">Código</a>
+          </div>
+        </div>
+      </div>
 
-<p>
-Página web simulando cardápio de loja de cookies com design responsivo e interatividade em JavaScript.
-</p>
+      <!-- Card 3 -->
+      <div class="projeto-card reveal reveal-d3">
+        <div class="projeto-img-wrap">
+          <img class="projeto-img" src="image/mensagens.jpg" alt="Mensagens 2026">
+        </div>
+        <div class="projeto-body">
+          <span class="projeto-tag">Interativo</span>
+          <h3>Mensagens 2026</h3>
+          <p>Página interativa com mensagens positivas e manipulação dinâmica do DOM.</p>
+          <div class="projeto-links">
+            <a href="https://joaomariano087.github.io/mensagens-2026/"
+               target="_blank" rel="noopener" class="btn-p-primary">Ver site</a>
+            <a href="https://github.com/joaomariano087/Mensagens-2026"
+               target="_blank" rel="noopener" class="btn-p-outline">Código</a>
+          </div>
+        </div>
+      </div>
 
-<div class="card-botoes">
-<a href="https://joaomariano087.github.io/Sunshine-house/" target="_blank" class="botao">Ver site</a>
-<a href="https://github.com/joaomariano087/Sunshine-house" target="_blank" class="botao">Código</a>
-</div>
-</div>
-
-<div class="card">
-<img src="imagem/conversor-moeda.png" alt="Projeto Conversor de Moeda">
-
-<h3>Conversor de Moeda</h3>
-
-<p>
-Aplicação web para conversão de valores entre diferentes moedas, com interface intuitiva e atualizações em tempo real.
-</p>
-
-<div class="card-botoes">
-<a href="https://joaomariano087.github.io/conversor-moeda/" target="_blank" class="botao">Ver site</a>
-<a href="https://github.com/joaomariano087/conversor-moeda" target="_blank" class="botao">Código</a>
-</div>
-</div>
-
-<div class="card">
-<img src="imagem/mensagens.jpg" alt="Projeto Mensagens 2026">
-
-<h3>Mensagens 2026</h3>
-
-<p>
-Página interativa que exibe mensagens positivas dinamicamente com manipulação do DOM.
-</p>
-
-<div class="card-botoes">
-<a href="https://joaomariano087.github.io/mensagens-2026/" target="_blank" class="botao">Ver site</a>
-<a href="https://github.com/joaomariano087/Mensagens-2026" target="_blank" class="botao">Código</a>
-</div>
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<!-- SERVIÇOS -->
-<section class="servicos animar">
 
-<h2>Serviços</h2>
+<!-- ═══════════════════════════════════════════
+     SERVIÇOS
+═══════════════════════════════════════════ -->
+<section id="servicos">
+  <div class="section-inner">
+    <div class="servicos-grid">
 
-<p class="servico-subtitulo">
-Landing Pages profissionais para empresas, negócios digitais e profissionais que desejam apresentar seus serviços de forma clara e eficiente.
-</p>
+      <div class="servicos-left">
+        <p class="section-eyebrow reveal">Serviços</p>
+        <h2 class="section-title reveal reveal-d1">
+          Precisa de uma<br><em>landing page?</em>
+        </h2>
+        <p class="reveal reveal-d2">
+          Desenvolvo landing pages profissionais para empresas, negócios digitais e
+          profissionais que querem apresentar seus serviços com clareza e converter
+          visitantes em clientes.
+        </p>
+      </div>
 
-<div class="servico-card">
+      <div class="reveal reveal-d3">
+        <div class="servico-card">
+          <div class="servico-card-top-bar"></div>
+          <div class="servico-icon">⚡</div>
+          <h3>Criação de Landing Pages</h3>
+          <p>Páginas modernas, responsivas e focadas em conversão para impulsionar o seu negócio digital.</p>
+          <ul class="servico-list">
+            <li>
+              <span class="servico-check">✓</span>
+              Responsiva para celular e desktop
+            </li>
+            <li>
+              <span class="servico-check">✓</span>
+              Design moderno e organizado
+            </li>
+            <li>
+              <span class="servico-check">✓</span>
+              Estrutura otimizada para conversão
+            </li>
+          </ul>
+          <a href="https://wa.me/5587999118417?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20criar%20uma%20landing%20page."
+             target="_blank" rel="noopener" class="btn-servico">
+            Solicitar Landing Page
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
 
-<h3>Criação de Landing Pages</h3>
-
-<p>
-Desenvolvo landing pages modernas, responsivas e focadas em conversão.
-</p>
-
-<ul>
-<li>Páginas responsivas para celular e desktop</li>
-<li>Design moderno e organizado</li>
-<li>Estrutura otimizada</li>
-</ul>
-
-<a href="https://wa.me/5587999118417?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20criar%20uma%20landing%20page." 
-target="_blank"
-rel="noopener"
-class="botao">
-Solicitar Landing Page
-</a>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<section class="animar">
+ <div class="reveal reveal-d3">
+        <div class="servico-card">
+          <div class="servico-card-top-bar"></div>
+          <div class="servico-icon">⚡</div>
+          <h3>Outros Serviços</h3>
+          <p>Também presto outros serviços relacionados a tecnologia e design.</p>
+          <ul class="servico-list">
+            <li>
+              <span class="servico-check">✓</span>
+              Criação de ebooks e materiais digitais
+            </li>
+            <li>
+              <span class="servico-check">✓</span>
+             Configuração de blogs e sites 
+            </li>
+            <li>
+              <span class="servico-check">✓</span>
+              Criação de apresentações e materiais para redes sociais
+            </li>
+          </ul>
 
-<section class="contato animar">
-
-<h3>
-  Vamos conversar sobre seu projeto?
-</h3>
-
+<!-- ═══════════════════════════════════════════
+     CONTATO
+═══════════════════════════════════════════ -->
+<section id="contato">
+  <div class="contato-blob"></div>
+  <div class="section-inner">
+    <div class="contato-inner">
+      <p class="section-eyebrow reveal">Contato</p>
+      <h2 class="section-title reveal reveal-d1">
+        Vamos criar algo<br><em>incrível juntos?</em>
+      </h2>
+      <p class="reveal reveal-d2">
+        Tem um projeto em mente? Estou disponível para novos projetos e colaborações.
+        Entre em contato e vamos conversar sobre como posso ajudar.
+      </p>
+      <a href="https://wa.me/5587999118417?text=Olá!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+         target="_blank" rel="noopener" class="contato-btn reveal reveal-d3">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
 </section>
- 
-</main>
 
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
 <footer>
-<p>© 2026 - João Mariano</p>
+  <p>© 2026 João Mariano — Todos os direitos reservados</p>
+  <ul class="footer-links">
+    <li><a href="https://github.com/joaomariano087" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://linkedin.com/in/joão-mariano-150386327" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/joao_valadares09/" target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
