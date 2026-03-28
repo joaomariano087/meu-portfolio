@@ -37,7 +37,7 @@ body {
 
 /* ── NOISE GRAIN ─────────────────────────────── */
 body::after {
-  content: '';
+  content: var(--bg);
   position: fixed; inset: 0;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   opacity: 0.018;
@@ -53,7 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background 0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
+  transition:  0.4s, backdrop-filter 0.4s, box-shadow 0.4s;
 }
 nav.scrolled {
   background: rgba(255,255,255,0.88);
@@ -105,7 +105,7 @@ nav.scrolled {
   font-weight: 600 !important;
   letter-spacing: 0 !important;
   font-size: 0.875rem !important;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s !important;
+  transition:  0.2s, transform 0.2s, box-shadow 0.2s !important;
 }
 .nav-cta:hover {
   background: var(--accent-dk) !important;
@@ -258,7 +258,7 @@ nav.scrolled {
   font-size: 0.925rem;
   font-weight: 600;
   letter-spacing: -0.01em;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition:  0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .btn-primary:hover {
   background: var(--accent-dk);
@@ -280,7 +280,7 @@ nav.scrolled {
   font-size: 0.925rem;
   font-weight: 600;
   border: 1.5px solid rgba(13,27,42,0.15);
-  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  transition: border-color 0.2s,  0.2s, transform 0.2s;
 }
 .btn-secondary:hover {
   border-color: var(--accent);
@@ -560,7 +560,7 @@ nav.scrolled {
 
 .projetos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit,);
   gap: 24px;
 }
 
@@ -637,7 +637,7 @@ nav.scrolled {
   border-radius: 100px;
   font-size: 0.8rem;
   font-weight: 600;
-  transition: background 0.2s, transform 0.2s;
+  transition: 0.2s, transform 0.2s;
 }
 .btn-p-primary:hover {
   background: var(--accent-dk);
@@ -758,7 +758,7 @@ nav.scrolled {
   border-radius: 100px;
   font-size: 0.925rem;
   font-weight: 600;
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  transition:  0.2s, transform 0.2s, box-shadow 0.2s;
 }
 .btn-servico:hover {
   background: var(--accent-dk);
@@ -809,7 +809,7 @@ nav.scrolled {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  transition: background 0.2s, transform 0.3s, box-shadow 0.3s;
+  transition:  0.2s, transform 0.3s, box-shadow 0.3s;
 }
 .contato-btn:hover {
   background: var(--accent-dk);
@@ -890,4 +890,161 @@ footer p {
 
   #contato { padding: 100px 0; }
   footer { padding: 24px; }
+}
+
+.sobre-stat-chip.chip-2{
+  display: flex;
+  justify-content: flex-end;
+}
+  
+
+/* ═══════════════════════════════════════════════
+   JOÃO MARIANO — PORTFOLIO (ATUALIZADO)
+═══════════════════════════════════════════════ */
+
+:root {
+  --bg:#E9F1FA;
+  --surface:#FFFFFF;
+  --accent:#00ABE4;
+  --accent-dk:#0090c4;
+  --accent-lt:rgba(0,171,228,0.10);
+  --text:#0d1b2a;
+  --muted:#5a7184;
+  --dimmed:#8fa3b4;
+  --border:rgba(0,171,228,0.15);
+
+  /* sombras mais neutras */
+  --shadow-sm:0 4px 12px rgba(0,0,0,0.08);
+  --shadow-md:0 8px 24px rgba(0,0,0,0.12);
+  --shadow-lg:0 20px 40px rgba(0,0,0,0.16);
+
+  --font-display:'Syne', sans-serif;
+  --font-body:'DM Sans', sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:100px;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  overflow-x:hidden;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* NAV */
+nav{
+  position:fixed;
+  width:100%;
+  padding:22px clamp(16px,5vw,64px);
+  display:flex;
+  justify-content:space-between;
+  z-index:500;
+}
+
+.nav-links{display:flex;gap:36px}
+
+.nav-cta{
+  background:var(--accent);
+  color:#fff;
+  padding:10px 22px;
+  border-radius:100px;
+  transition:all 0.2s ease;
+}
+
+.nav-cta:hover{
+  transform:translateY(-2px);
+}
+
+/* HERO */
+#hero{
+  padding:120px clamp(16px,5vw,64px);
+}
+
+.hero-geo{
+  right:5%;
+  width:min(420px,40vw);
+}
+
+/* BOTÕES */
+.btn-primary,
+.btn-secondary,
+.btn-servico,
+.contato-btn{
+  transition:all 0.2s ease;
+}
+
+.btn-primary:active,
+.btn-servico:active,
+.contato-btn:active{
+  transform:translateY(1px) scale(0.98);
+}
+
+/* SECTION */
+.section-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 clamp(16px,5vw,64px);
+}
+
+/* PROJETOS GRID FIX */
+.projetos-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:24px;
+}
+
+/* CARDS */
+.projeto-card{
+  background:var(--bg);
+  border-radius:20px;
+  transition:all 0.3s ease;
+}
+
+.projeto-card:hover{
+  transform:translateY(-6px);
+  box-shadow:var(--shadow-lg);
+}
+
+/* SERVIÇOS */
+.servicos-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+}
+
+/* RESPONSIVO */
+@media(max-width:960px){
+
+  .nav-links{display:none}
+
+  #hero{
+    padding:100px 24px 80px;
+  }
+
+  .hero-geo{display:none}
+
+  .section-inner{
+    padding:0 24px;
+  }
+
+  .sobre-grid,
+  .skills-grid,
+  .servicos-grid{
+    grid-template-columns:1fr;
+  }
+
+  .projetos-grid{
+    grid-template-columns:1fr;
+  }
 }
